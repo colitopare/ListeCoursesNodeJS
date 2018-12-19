@@ -6,7 +6,7 @@ const methodOverride = require('method-override')
 const session = require('express-session')
 const app = express()
 
-const port = 3000
+const port = process.env.PORT || 3000
 
 // Database avec une fonction de callback then pour dire qu'on est bien connecter
 //mongoose.connect('mongodb://localhost/courses', { useNewUrlParser: true }).then(() => {
